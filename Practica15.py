@@ -15,3 +15,10 @@ def bubble_short(cadena):
 
 print("Esta es la cadena:",cadena1)
 print(bubble_short(cadena1))
+
+
+""" Tambien se puede hacer con el metodo sort() """
+
+cadena1.sort()
+
+print('ordernada =', cadena1)
