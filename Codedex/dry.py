@@ -10,4 +10,3 @@ for i in zip(num, numeros):
     print(i)
 
 """ zip es para unir dos listas en una sola lista """
-
