@@ -15,3 +15,15 @@ print('using read() method: ')
 content = file2.read()
 print(content)
 file2.close()
+
+""" 
+Esto que se hace con with es para que no tengas que colocar el close()
+al final del archivo, ya que con with se cierra automaticamente 
+"""
+
+with open('.\Codedex\Python_intermediate\Example_file_reader.txt', 'w') as file3: 
+    file3.write('Esto est un texto que va a modificar el archivo')
+
+with open('.\Codedex\Python_intermediate\Example_file_reader.txt', 'r') as file3:
+    content = file3.read()
+    print(content)
