@@ -39,10 +39,12 @@ liked_songs = [
 def write_songs(liked_Song, file_name):
     with open(file_name, "w") as file:
         file.write("Liked songs:\n")
-        for songs in liked_Song:
-            file.write(
-                f"song {songs}: {liked_Song[songs]['title']} es de {liked_Song[songs]['artist']}"
-            )
+        for number,songs in enumerate(liked_Song, start = 1):
+            #enumerate()es usado para conseguir el idex del elemento
+            #numero es el indice y songs en la lista de liked_songs
+            #para el metodo enumerate() se tienen que poner dos variables antes
+            #la primera para el indice y la segunda para los elementos
+            file.write(f"{number}. song: {songs['title']} es de {songs['artist']}\n")
 
 
 write_songs(liked_songs, "liked_songs.txt")
