@@ -1,5 +1,3 @@
-# Write code below 💖
-
 from functools import reduce
 
 ''' map toma una funcion que quieras aplicar a una serie de datos y te regresa la lista con los 
@@ -27,3 +25,25 @@ def multiply(x,y):
 product = reduce(multiply, [ 1,2,3,4,5])
 
 print(product)
+
+''' excersice '''
+# List of songs with their durations (in minutes)
+playlist = [('What Was I Made For?', 3.42), ('Just Like That', 5.05), ('Song 3', 6.8), ('Leave The Door Open', 4.02), ('I Can\'t Breath', 4.47), ('Bad Guy', 3.14)]
+
+def longer_than_five_minutes(x):
+ return x[1] >= 5.00 
+
+songs = filter(longer_than_five_minutes, playlist)
+print("Canciones de mas de 5 min:",list(songs))
+
+def minutes_to_seconds(x):
+  return x[1] * 60 
+
+songs_in_seconds = map(minutes_to_seconds, playlist) 
+print('segundos de las canciones:',list(songs_in_seconds))
+
+def add_durations(total,song):
+  return total + song[1]
+
+total = reduce(add_durations, playlist, 0)
+print("La suma es de:", total)
