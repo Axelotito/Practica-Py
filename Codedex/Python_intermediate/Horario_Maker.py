@@ -2,7 +2,7 @@ import csv
 import random
 
 # Leer el archivo CSV
-with open('D:\\Programacion\\Python\\Practica\\Codedex\\Python_intermediate\\Horarios.csv', 'r', encoding='utf-8') as file:
+with open('D:\Programacion\Python\Practica\Codedex\Python_intermediate\Horarios copy.csv', 'r', encoding='utf-8') as file:
     reader = csv.reader(file)
     headers = next(reader)  # Leer la primera fila como encabezados
     data = list(reader)  # Leer el resto del archivo
