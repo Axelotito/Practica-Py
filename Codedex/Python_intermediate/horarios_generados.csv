@@ -1,0 +1,61 @@
+Maestro,Clave,Materia,Grupo,Lunes,Lunes-end,Martes,Martes-end,Miercoles,Miercoles-end,Jueves,Jueves-end,Viernes,Viernes-end,Horario
+SUAREZ HERRERA ALEJANDRO        ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1308,Lun:NO    ,Lun-end:NO    ,Mar:13:00 ,Mar-end:15:15 ,Mie:NO     ,Mie:NO        ,Jue:13:00 ,Jue-end:15:15 ,Vie:NO     ,Vie-end:NO,1
+PEÑALOZA ROMERO ERNESTO         ,190,ESTRUCTURA DE DATOS           ,1309,Lun:07:00 ,Lun-end:08:20 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:20 ,Jue:NO    ,Jue-end:NO    ,Vie:07:00  ,Vie-end:08:20,1
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,1
+MARTINEZ ROMERO JONATHAN        ,1303,ECUACIONES DIFERENCIALES      ,1309,Lun:10:00 ,Lun-end:11:30 ,Mar:NO    ,Mar-end:NO    ,Mie:10:00  ,Mie-end:11:30 ,Jue:NO    ,Jue-end:NO    ,Vie:10:00  ,Vie-end:11:30,1
+GARCIA VILLANUEVA MA. DEL PILAR ,1311,EMPRENDIMIENTO 2              ,1307,Lun:NO    ,Lun-end:NO    ,Mar:09:00 ,Mar-end:11:00 ,Mie:NO     ,Mie-end:No    ,Jue:09:00 ,Jue-end:11:00 ,Vie:NO     ,Vie-end:NO,1
+,,,,,,,,,,,,,,1
+VIEYRA REBOYO LUIS ARMANDO      ,480,METODOS NUMERICOS             ,1310,Lun:07:00 ,Lun-end:08:30 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:30 ,Jue:NO    ,jue-end:NO    ,Vie:07:00  ,Vie-end:08:30,2
+SANCHEZ HERNANDEZ MIGUEL ANGEL  ,190,ESTRUCTURA DE DATOS           ,1307,Lun:08:40 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie: 08:40 ,Mie-end:10:00 ,Jue:NO    ,Jue-end:NO    ,Vie: 08:40 ,Vie-end:10:00,2
+MARTINEZ ROMERO JONATHAN        ,1303,ECUACIONES DIFERENCIALES      ,1309,Lun:10:00 ,Lun-end:11:30 ,Mar:NO    ,Mar-end:NO    ,Mie:10:00  ,Mie-end:11:30 ,Jue:NO    ,Jue-end:NO    ,Vie:10:00  ,Vie-end:11:30,2
+VERDE CRUZ ABEL                 ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1311,Lun:08:30 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:10:00 ,Jue:NO    ,jue-end:NO    ,Vie:08:30  ,Vie-end:10:00,2
+MONDRAGON ESCOBAR ALFREDO       ,1311,EMPRENDIMIENTO 2              ,1309,Lun:08:30 ,Lun-end:9:50  ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:9:50  ,Jue:NO    ,Jue-end:NO    ,Vie:08:30  ,Vie-end:9:50,2
+,,,,,,,,,,,,,,2
+SUAREZ HERRERA ALEJANDRO        ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1308,Lun:NO    ,Lun-end:NO    ,Mar:13:00 ,Mar-end:15:15 ,Mie:NO     ,Mie:NO        ,Jue:13:00 ,Jue-end:15:15 ,Vie:NO     ,Vie-end:NO,3
+PEÑALOZA ROMERO ERNESTO         ,190,ESTRUCTURA DE DATOS           ,1309,Lun:07:00 ,Lun-end:08:20 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:20 ,Jue:NO    ,Jue-end:NO    ,Vie:07:00  ,Vie-end:08:20,3
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,3
+MARTINEZ ROMERO JONATHAN        ,1303,ECUACIONES DIFERENCIALES      ,1309,Lun:10:00 ,Lun-end:11:30 ,Mar:NO    ,Mar-end:NO    ,Mie:10:00  ,Mie-end:11:30 ,Jue:NO    ,Jue-end:NO    ,Vie:10:00  ,Vie-end:11:30,3
+GARCIA VILLANUEVA MA. DEL PILAR ,1311,EMPRENDIMIENTO 2              ,1307,Lun:NO    ,Lun-end:NO    ,Mar:09:00 ,Mar-end:11:00 ,Mie:NO     ,Mie-end:No    ,Jue:09:00 ,Jue-end:11:00 ,Vie:NO     ,Vie-end:NO,3
+,,,,,,,,,,,,,,3
+PEÑALOZA ROMERO ERNESTO         ,190,ESTRUCTURA DE DATOS           ,1309,Lun:07:00 ,Lun-end:08:20 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:20 ,Jue:NO    ,Jue-end:NO    ,Vie:07:00  ,Vie-end:08:20,4
+VERDE CRUZ ABEL                 ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1311,Lun:08:30 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:10:00 ,Jue:NO    ,jue-end:NO    ,Vie:08:30  ,Vie-end:10:00,4
+VERDE CRUZ ABEL                 ,1303,ECUACIONES DIFERENCIALES      ,1310,Lun:NO    ,Lun-end:NO    ,Mar:13:00 ,Mar-end:15:15 ,Mie:NO     ,Mie-end:NO    ,Jue:13:00 ,Jue-end:15:15 ,Vie:NO     ,Vie-end:NO,4
+MONDRAGON ESCOBAR ALFREDO       ,1311,EMPRENDIMIENTO 2              ,1309,Lun:08:30 ,Lun-end:9:50  ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:9:50  ,Jue:NO    ,Jue-end:NO    ,Vie:08:30  ,Vie-end:9:50,4
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,4
+,,,,,,,,,,,,,,4
+SANCHEZ HERNANDEZ MIGUEL ANGEL  ,190,ESTRUCTURA DE DATOS           ,1307,Lun:08:40 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie: 08:40 ,Mie-end:10:00 ,Jue:NO    ,Jue-end:NO    ,Vie: 08:40 ,Vie-end:10:00,5
+SUAREZ HERRERA ALEJANDRO        ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1308,Lun:NO    ,Lun-end:NO    ,Mar:13:00 ,Mar-end:15:15 ,Mie:NO     ,Mie:NO        ,Jue:13:00 ,Jue-end:15:15 ,Vie:NO     ,Vie-end:NO,5
+MARTINEZ ROMERO JONATHAN        ,1303,ECUACIONES DIFERENCIALES      ,1309,Lun:10:00 ,Lun-end:11:30 ,Mar:NO    ,Mar-end:NO    ,Mie:10:00  ,Mie-end:11:30 ,Jue:NO    ,Jue-end:NO    ,Vie:10:00  ,Vie-end:11:30,5
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,5
+GARCIA VILLANUEVA MA. DEL PILAR ,1311,EMPRENDIMIENTO 2              ,1307,Lun:NO    ,Lun-end:NO    ,Mar:09:00 ,Mar-end:11:00 ,Mie:NO     ,Mie-end:No    ,Jue:09:00 ,Jue-end:11:00 ,Vie:NO     ,Vie-end:NO,5
+,,,,,,,,,,,,,,5
+HERNANDEZ LOPEZ SERGIO          ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1307,Lun:NO    ,Lun-end:NO    ,Mar:07:00 ,Mar-end:09:00 ,Mie:NO     ,Mie-end:NO    ,Jue:07:00 ,Jue-end:09:00 ,Vie:NO     ,Vie-end:NO,6
+VERDE CRUZ ABEL                 ,1303,ECUACIONES DIFERENCIALES      ,1310,Lun:NO    ,Lun-end:NO    ,Mar:13:00 ,Mar-end:15:15 ,Mie:NO     ,Mie-end:NO    ,Jue:13:00 ,Jue-end:15:15 ,Vie:NO     ,Vie-end:NO,6
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,6
+MONDRAGON ESCOBAR ALFREDO       ,1311,EMPRENDIMIENTO 2              ,1309,Lun:08:30 ,Lun-end:9:50  ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:9:50  ,Jue:NO    ,Jue-end:NO    ,Vie:08:30  ,Vie-end:9:50,6
+PEÑALOZA ROMERO ERNESTO         ,190,ESTRUCTURA DE DATOS           ,1309,Lun:07:00 ,Lun-end:08:20 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:20 ,Jue:NO    ,Jue-end:NO    ,Vie:07:00  ,Vie-end:08:20,6
+,,,,,,,,,,,,,,6
+PEREZ GUZMAN ALEJANDRO          ,480,METODOS NUMERICOS             ,1308,Lun:13:00 ,Lun-end:15:15 ,Mar:NO    ,Mar-end:NO    ,Mie:13:00  ,Mie-end:15:15 ,Jue:NO    ,Jue-end:NO    ,Vie:NO     ,Vie-end:NO,7
+CHAPA PLATA MARTHA              ,1303,ECUACIONES DIFERENCIALES      ,1308,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,7
+SANCHEZ HERNANDEZ MIGUEL ANGEL  ,190,ESTRUCTURA DE DATOS           ,1307,Lun:08:40 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie: 08:40 ,Mie-end:10:00 ,Jue:NO    ,Jue-end:NO    ,Vie: 08:40 ,Vie-end:10:00,7
+GARCIA VILLANUEVA MA. DEL PILAR ,1311,EMPRENDIMIENTO 2              ,1307,Lun:NO    ,Lun-end:NO    ,Mar:09:00 ,Mar-end:11:00 ,Mie:NO     ,Mie-end:No    ,Jue:09:00 ,Jue-end:11:00 ,Vie:NO     ,Vie-end:NO,7
+SUAREZ HERRERA ALEJANDRO        ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1308,Lun:NO    ,Lun-end:NO    ,Mar:13:00 ,Mar-end:15:15 ,Mie:NO     ,Mie:NO        ,Jue:13:00 ,Jue-end:15:15 ,Vie:NO     ,Vie-end:NO,7
+,,,,,,,,,,,,,,7
+HERNANDEZ LOPEZ SERGIO          ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1307,Lun:NO    ,Lun-end:NO    ,Mar:07:00 ,Mar-end:09:00 ,Mie:NO     ,Mie-end:NO    ,Jue:07:00 ,Jue-end:09:00 ,Vie:NO     ,Vie-end:NO,8
+MONDRAGON ESCOBAR ALFREDO       ,1311,EMPRENDIMIENTO 2              ,1309,Lun:08:30 ,Lun-end:9:50  ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:9:50  ,Jue:NO    ,Jue-end:NO    ,Vie:08:30  ,Vie-end:9:50,8
+MARTINEZ ROMERO JONATHAN        ,1303,ECUACIONES DIFERENCIALES      ,1309,Lun:10:00 ,Lun-end:11:30 ,Mar:NO    ,Mar-end:NO    ,Mie:10:00  ,Mie-end:11:30 ,Jue:NO    ,Jue-end:NO    ,Vie:10:00  ,Vie-end:11:30,8
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,8
+SANCHEZ HERNANDEZ MIGUEL ANGEL  ,190,ESTRUCTURA DE DATOS           ,1307,Lun:08:40 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie: 08:40 ,Mie-end:10:00 ,Jue:NO    ,Jue-end:NO    ,Vie: 08:40 ,Vie-end:10:00,8
+,,,,,,,,,,,,,,8
+GARCIA VILLANUEVA MA. DEL PILAR ,1311,EMPRENDIMIENTO 2              ,1307,Lun:NO    ,Lun-end:NO    ,Mar:09:00 ,Mar-end:11:00 ,Mie:NO     ,Mie-end:No    ,Jue:09:00 ,Jue-end:11:00 ,Vie:NO     ,Vie-end:NO,9
+GONZALEZ HERNANDEZ GERARDO      ,1303,ECUACIONES DIFERENCIALES      ,1307,Lun:07:00 ,Lun-end:08:30 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:30 ,Jue:NO    ,Jue-end:NO    ,Vie:07:00  ,Vie-end:08:30,9
+VERDE CRUZ ABEL                 ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1311,Lun:08:30 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:10:00 ,Jue:NO    ,jue-end:NO    ,Vie:08:30  ,Vie-end:10:00,9
+SANCHEZ HERNANDEZ MIGUEL ANGEL  ,190,ESTRUCTURA DE DATOS           ,1307,Lun:08:40 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie: 08:40 ,Mie-end:10:00 ,Jue:NO    ,Jue-end:NO    ,Vie: 08:40 ,Vie-end:10:00,9
+MARTINEZ ROMERO JONATHAN        ,480,METODOS NUMERICOS             ,1307,Lun:11:30 ,Lun-end:13:00 ,Mar:NO    ,Mar-end:NO    ,Mie:11:30  ,Mie-end:13:00 ,Jue:NO    ,Jue-end:NO    ,Vie:11:30  ,Vie-end:13:00,9
+,,,,,,,,,,,,,,9
+VIEYRA REBOYO LUIS ARMANDO      ,480,METODOS NUMERICOS             ,1310,Lun:07:00 ,Lun-end:08:30 ,Mar:NO    ,Mar-end:NO    ,Mie:07:00  ,Mie-end:08:30 ,Jue:NO    ,jue-end:NO    ,Vie:07:00  ,Vie-end:08:30,10
+HERNANDEZ LOPEZ SERGIO          ,71,ELECTRICIDAD Y MAGNETISMO (L) ,1307,Lun:NO    ,Lun-end:NO    ,Mar:07:00 ,Mar-end:09:00 ,Mie:NO     ,Mie-end:NO    ,Jue:07:00 ,Jue-end:09:00 ,Vie:NO     ,Vie-end:NO,10
+MONDRAGON ESCOBAR ALFREDO       ,1311,EMPRENDIMIENTO 2              ,1309,Lun:08:30 ,Lun-end:9:50  ,Mar:NO    ,Mar-end:NO    ,Mie:08:30  ,Mie-end:9:50  ,Jue:NO    ,Jue-end:NO    ,Vie:08:30  ,Vie-end:9:50,10
+MARTINEZ ROMERO JONATHAN        ,1303,ECUACIONES DIFERENCIALES      ,1309,Lun:10:00 ,Lun-end:11:30 ,Mar:NO    ,Mar-end:NO    ,Mie:10:00  ,Mie-end:11:30 ,Jue:NO    ,Jue-end:NO    ,Vie:10:00  ,Vie-end:11:30,10
+SANCHEZ HERNANDEZ MIGUEL ANGEL  ,190,ESTRUCTURA DE DATOS           ,1307,Lun:08:40 ,Lun-end:10:00 ,Mar:NO    ,Mar-end:NO    ,Mie: 08:40 ,Mie-end:10:00 ,Jue:NO    ,Jue-end:NO    ,Vie: 08:40 ,Vie-end:10:00,10
+,,,,,,,,,,,,,,10

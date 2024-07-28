@@ -1,6 +1,7 @@
 import pandas as pd
+import random
 
-# Leer el archivo CSV desde la ruta especificada
+# Ruta del archivo CSV
 ruta_csv = r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\Horarios.csv'
 
 try:
@@ -27,39 +28,48 @@ if not all(col in columnas_actuales for col in columnas_esperadas):
     print(f"Columnas esperadas: {columnas_esperadas}")
     exit()
 
-# Función para generar un horario
+# Eliminar filas duplicadas basadas en las columnas 'Maestro' y 'Materia'
+df = df.drop_duplicates(subset=['Maestro', 'Materia'])
+
+# Función para generar un horario sin repetir materias
 def generar_horario(df):
     horario = []
-    maestros = df['Maestro'].unique()
+    materias_agregadas = set()
+    df_shuffled = df.sample(frac=1).reset_index(drop=True)  # Mezclar el DataFrame
+    maestros = df_shuffled['Maestro'].unique()
     for maestro in maestros:
-        clases_maestro = df[df['Maestro'] == maestro]
-        clases_seleccionadas = clases_maestro.sample(n=min(3, len(clases_maestro)))
-        for index, clase in clases_seleccionadas.iterrows():
-            horario.append({
-                'Maestro': clase['Maestro'],
-                'Clave': clase['Clave'],
-                'Materia': clase['Materia'],
-                'Grupo': clase['Grupo'],
-                'Lunes': clase['Lunes'],
-                'Lunes-end': clase['Lunes-end'],
-                'Martes': clase['Martes'],
-                'Martes-end': clase['Martes-end'],
-                'Miercoles': clase['Miercoles'],
-                'Miercoles-end': clase['Miercoles-end'],
-                'Jueves': clase['Jueves'],
-                'Jueves-end': clase['Jueves-end'],
-                'Viernes': clase['Viernes'],
-                'Viernes-end': clase['Viernes-end']
-            })
+        clases_maestro = df_shuffled[df_shuffled['Maestro'] == maestro]
+        for index, clase in clases_maestro.iterrows():
+            if clase['Materia'] not in materias_agregadas:
+                horario.append({
+                    'Maestro': clase['Maestro'],
+                    'Clave': clase['Clave'],
+                    'Materia': clase['Materia'],
+                    'Grupo': clase['Grupo'],
+                    'Lunes': clase['Lunes'],
+                    'Lunes-end': clase['Lunes-end'],
+                    'Martes': clase['Martes'],
+                    'Martes-end': clase['Martes-end'],
+                    'Miercoles': clase['Miercoles'],
+                    'Miercoles-end': clase['Miercoles-end'],
+                    'Jueves': clase['Jueves'],
+                    'Jueves-end': clase['Jueves-end'],
+                    'Viernes': clase['Viernes'],
+                    'Viernes-end': clase['Viernes-end']
+                })
+                materias_agregadas.add(clase['Materia'])
     return horario
 
-# Generar los horarios
-horario1 = generar_horario(df)
-horario2 = generar_horario(df)
-horario3 = generar_horario(df)
+# Generar 10 horarios diferentes
+horarios = []
+for _ in range(10):
+    horario = generar_horario(df)
+    horarios.append(horario)
 
 # Convertir los horarios a DataFrame y agregar una fila vacía después de cada 5 materias
 def agregar_fila_vacia(horario):
+    if not horario:
+        return pd.DataFrame()  # Devolver un DataFrame vacío si el horario está vacío
     df_horario = pd.DataFrame(horario)
     filas = []
     for i in range(0, len(df_horario), 5):
@@ -68,13 +78,15 @@ def agregar_fila_vacia(horario):
     df_horario = pd.concat(filas, ignore_index=True)
     return df_horario
 
-df_horario1 = agregar_fila_vacia(horario1)
-df_horario2 = agregar_fila_vacia(horario2)
-df_horario3 = agregar_fila_vacia(horario3)
+# Crear un DataFrame para almacenar todos los horarios
+df_horarios = pd.DataFrame()
+for i, horario in enumerate(horarios):
+    df_horario = agregar_fila_vacia(horario)
+    if not df_horario.empty:  # Verificar que el DataFrame no esté vacío
+        df_horario['Horario'] = i + 1  # Agregar una columna para identificar el horario
+        df_horarios = pd.concat([df_horarios, df_horario], ignore_index=True)
 
-# Guardar los horarios generados en archivos CSV
-df_horario1.to_csv(r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\horario1.csv', index=False)
-df_horario2.to_csv(r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\horario2.csv', index=False)
-df_horario3.to_csv(r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\horario3.csv', index=False)
+# Guardar los horarios generados en un archivo CSV
+df_horarios.to_csv(r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\horarios_generados.csv', index=False)
 
-print("Horarios generados y guardados exitosamente.")
+print("10 horarios generados y guardados exitosamente.")
