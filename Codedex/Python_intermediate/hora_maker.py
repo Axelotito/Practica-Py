@@ -1,37 +1,44 @@
 import pandas as pd
-import random
 
 # Ruta del archivo CSV
-ruta_csv = r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\Horarios.csv'
+ruta_csv = 'D:\\Programacion\\Python\\Practica\\Codedex\\Python_intermediate\\Horarios.csv'
 
-try:
-    df = pd.read_csv(ruta_csv)
-except FileNotFoundError:
-    print(f"El archivo en la ruta {ruta_csv} no fue encontrado.")
-    exit()
+# Leer el archivo CSV
+df = pd.read_csv(ruta_csv)
 
 # Eliminar espacios en blanco de los nombres de las columnas
 df.columns = df.columns.str.strip()
 
-# Renombrar las columnas incorrectas
-df = df.rename(columns={'Martes-end    .1': 'Miercoles-end'})
+# Imprimir las columnas y las primeras filas del DataFrame para ver su contenido
+print("Columnas del DataFrame:")
+print(df.columns)
+print("\nPrimeras filas del DataFrame:")
+print(df.head())
 
-# Asegurar que los nombres de las columnas sean los esperados
-columnas_esperadas = ['Maestro', 'Clave', 'Materia', 'Grupo', 'Lunes', 'Lunes-end', 'Martes', 'Martes-end', 
-                      'Miercoles', 'Miercoles-end', 'Jueves', 'Jueves-end', 'Viernes', 'Viernes-end']
+# Convertir las horas a un formato manejable
+def limpiar_hora(hora_str):
+    if pd.isna(hora_str) or hora_str.strip() == "NO" or isinstance(hora_str, str) and hora_str.strip().isalpha():
+        return None
+    try:
+        h, m = map(int, hora_str.strip().split(':'))
+        return h * 60 + m
+    except ValueError:
+        return None
 
-# Verificar si las columnas del CSV coinciden con las esperadas
-columnas_actuales = df.columns.tolist()
-if not all(col in columnas_actuales for col in columnas_esperadas):
-    print("El archivo CSV no tiene las columnas esperadas.")
-    print(f"Columnas encontradas: {columnas_actuales}")
-    print(f"Columnas esperadas: {columnas_esperadas}")
-    exit()
+# Aplicar la limpieza a las columnas de horas
+for dia in ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']:
+    if dia in df.columns and f'{dia}-end' in df.columns:
+        df[f'{dia}_start'] = df[dia].apply(limpiar_hora)
+        df[f'{dia}_end'] = df[f'{dia}-end'].apply(limpiar_hora)
 
 # Eliminar filas duplicadas basadas en las columnas 'Maestro' y 'Materia'
 df = df.drop_duplicates(subset=['Maestro', 'Materia'])
 
-# Función para generar un horario sin repetir materias
+# Función para verificar si dos intervalos de tiempo se solapan
+def solapan(hora_inicio1, hora_fin1, hora_inicio2, hora_fin2):
+    return not (hora_fin1 <= hora_inicio2 or hora_fin2 <= hora_inicio1)
+
+# Función para generar un horario sin repetir materias y sin solapamientos
 def generar_horario(df):
     horario = []
     materias_agregadas = set()
@@ -41,23 +48,25 @@ def generar_horario(df):
         clases_maestro = df_shuffled[df_shuffled['Maestro'] == maestro]
         for index, clase in clases_maestro.iterrows():
             if clase['Materia'] not in materias_agregadas:
-                horario.append({
-                    'Maestro': clase['Maestro'],
-                    'Clave': clase['Clave'],
-                    'Materia': clase['Materia'],
-                    'Grupo': clase['Grupo'],
-                    'Lunes': clase['Lunes'],
-                    'Lunes-end': clase['Lunes-end'],
-                    'Martes': clase['Martes'],
-                    'Martes-end': clase['Martes-end'],
-                    'Miercoles': clase['Miercoles'],
-                    'Miercoles-end': clase['Miercoles-end'],
-                    'Jueves': clase['Jueves'],
-                    'Jueves-end': clase['Jueves-end'],
-                    'Viernes': clase['Viernes'],
-                    'Viernes-end': clase['Viernes-end']
-                })
-                materias_agregadas.add(clase['Materia'])
+                # Verificar que no haya solapamientos en el horario
+                conflicto = False
+                for dia in ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']:
+                    if f'{dia}_start' in clase and f'{dia}_end' in clase:
+                        hora_inicio = clase[f'{dia}_start']
+                        hora_fin = clase[f'{dia}_end']
+                        for otra_clase in horario:
+                            otra_hora_inicio = otra_clase[f'{dia}_start']
+                            otra_hora_fin = otra_clase[f'{dia}_end']
+                            if otra_hora_inicio is not None and otra_hora_fin is not None and hora_inicio is not None and hora_fin is not None:
+                                if solapan(hora_inicio, hora_fin, otra_hora_inicio, otra_hora_fin):
+                                    conflicto = True
+                                    break
+                    if conflicto:
+                        break
+                
+                if not conflicto:
+                    horario.append(clase)
+                    materias_agregadas.add(clase['Materia'])
     return horario
 
 # Generar 10 horarios diferentes
@@ -87,6 +96,6 @@ for i, horario in enumerate(horarios):
         df_horarios = pd.concat([df_horarios, df_horario], ignore_index=True)
 
 # Guardar los horarios generados en un archivo CSV
-df_horarios.to_csv(r'D:\Programacion\Python\Practica\Codedex\Python_intermediate\horarios_generados.csv', index=False)
+df_horarios.to_csv('D:\\Programacion\\Python\\Practica\\Codedex\\Python_intermediate\\horarios_generados.csv', index=False)
 
 print("10 horarios generados y guardados exitosamente.")
