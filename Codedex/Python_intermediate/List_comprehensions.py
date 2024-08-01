@@ -22,6 +22,8 @@ def numbers_even(number):
     return (number % 2) == 0
 
 
+""" [expression for item in dataset if condition] """
+
 even_numbers = [num for num in numbers_2 if num % 2 == 0]
 
 print("Even numbers:", even_numbers)
