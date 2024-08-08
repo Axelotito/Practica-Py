@@ -7,8 +7,8 @@ def round_scores(student_scores):
     :param student_scores: list - float or int of student exam scores.
     :return: list - student scores *rounded* to nearest integer value.
     """
-    round_scores = [round(num) for num in student_scores]
-    return round_scores
+    rounded_scores = [round(num) for num in student_scores]  # Renombrar la variable local
+    return rounded_scores
 
 
 def count_failed_students(student_scores):
@@ -60,29 +60,22 @@ def letter_grades(highest):
     result = (highest - lowest) // 4  # division entera
 
     for i in range(3):
-        if i == 1:
-            adding = number_list[0] + result
-            number_list[0]
         adding = number_list[i] + result
         number_list.append(adding)
 
     return number_list
 
-
 def student_ranking(student_scores, student_names):
     """Organize the student's rank, name, and grade information in descending order.
-
+    
     :param student_scores: list - of scores in descending order.
-    :param student_names: list - of string names by exam score in descending order.
+    :param student_names: list - of names in descending order by their scores.
     :return: list - of strings in format ["<rank>. <student name>: <score>"].
     """
-    lenght = len(student_scores)
-    list_ranking = []
-    for i in range(lenght):
-        list_ranking.append(
-            str(i + 1) + ". " + student_names[i] + ": " + str(student_scores[i])
-        )
-    return list_ranking
+    ranking = []
+    for i, (name, score) in enumerate(zip(student_names, student_scores), start=1):
+        ranking.append(f"{i}. {name}: {score}")
+    return ranking
 
 
 def perfect_score(student_info):
