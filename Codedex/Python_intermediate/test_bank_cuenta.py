@@ -7,7 +7,9 @@ class TestBankAccount(unittest.TestCase):
         self.assertEqual(cuenta.balance, 100)
     
     def test_deposit_zero_amount(self):
-        self.assertEqual(self.cuenta.deposit(0), ValueError('Deposit amount must be positive'))
+        with self.assertRaises(ValueError) as context:
+            self.cuenta.deposit(0)
+        self.assertEqual(str(context.exception), 'Deposit amount must be positive')
 
     def test_deposit_positive_amount(self):
         self.cuenta.deposit(50)
