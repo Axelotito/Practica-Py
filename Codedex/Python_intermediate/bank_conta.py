@@ -14,6 +14,3 @@ class BankAccount:
         elif amount > self.balance:
             raise ValueError('Insufficient funds')
         self.balance -= amount
-    
-cuenta = BankAccount(100)
- 
