@@ -16,7 +16,7 @@ class TestUnexpected(unittest.TestCase):
             result= get_sqrt(-4)
             self.assertEqual(result, ValueError )
 
-    """ Entonces tecnicamente puedo hacer preubas unitarias para ver si regresa
+    """ Entonces tecnicamente puedo hacer pruebas unitarias para ver si regresa
      algún error en caso de que el valor sea negativo o cero, en este caso"""
 
     def test_divide(self):

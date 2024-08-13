@@ -12,7 +12,8 @@ class CoffeeMenu:
     def get_price(self, item):
         if item not in self.menu:
             return None
-        return self.menu[item]
+        return self.menu.get(item)
     
     def add_item(self, item, price):
         self.menu[item] = price
+        return self.menu[item]
